@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .fcc 
+        {
+            color:white;
+            background-color: #800040;
+            padding: 20px;
+            width: 450px;
+        }
+
+        .fcf 
+        {
+            height: 100vh;
+            background-color: #b30059;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+        }
+
+
+        .fcc .submit 
+        {
+            background-color: #ffffff;
+            border-radius: 5px;
+            width: 100%;
+            padding: 5px 0;
+            font-size: 20px;
+        }
+
+
+
+        .fcc input,.fcc select,.fcc textarea 
+        {
+
+            margin-top: 10px;
+            border: none;
+            padding: 5px;
+        }
+        .tcc {
+            color: white;
+        }
+
+        
+        .fcc .submit:hover 
+        {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        .fcc {
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        * 
+        {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fcf">
+        <form name="cr" class="fcc">
+            <table class="tcc">
+                <tr>
+                    <td><label for="n-c">Name:</label></td>
+                    <td><input type="text" id="n-c" placeholder="your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="e-c">Email:</label></td>
+                    <td><input type="text" id="e-c" placeholder="your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="pc">Password:</label></td>
+                    <td><input type="password" id="pc"></td>
+                </tr>
+                <tr>
+                    <td><label for="chp">Phone Number:</label></td>
+                    <td><input type="number" id="chp"></td>
+                </tr>
+                <tr>
+                    <td><label for="gcc">Gender:</label></td>
+                    <td>Male: <input type="radio"  value="male" name="gcc" > Female: <input type="radio"  value="female" name="gcc" > Other: <input type="radio" value="other" name="gcc" ></td>
+                </tr>
+                <tr>
+                    <td><label for="lc">Language</label></td>
+                    <td>
+                        <select name="lc" id="lc">
+                            <option value="">Select language</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zc">Zip Code:</label></td>
+                    <td><input id="zc" type="number" ></td>
+                </tr>
+                <tr>
+                    <td><label for="ach">About:</label></td>
+                    <td><textarea placeholder="Write about yourself..." id="ach"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

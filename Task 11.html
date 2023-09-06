@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.login-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.login-field {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: rgb(0, 179, 60);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 5px;
+
+}
+
+.login-image {
+  width: 350px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.password-link {
+  float: right;
+  padding-top: 10px;
+  color:black;
+  padding-bottom:20px;
+  
+  
+}
+
+.password-link:hover {
+  cursor:pointer;
+}
+
+.abc {
+  box-sizing: border-box;
+  background-color: rgb(248, 238, 238);
+  padding:5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <img src="C:/Users/aksha/Downloads/Icon.png" alt="Avatar" class="login-image">
+  
+
+  <form>
+    <label name="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" class="login-field" required>
+    <label name="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" class="login-field" required>
+    <button type="submit" class="login-button">Login</button>
+    <label>
+      <input type="checkbox" name="remember"> Remember me
+    </label>
+    <div class="abc">
+    <button type="button" class="cancel-button">Cancel</button>
+    <p class="password-link">Forgot <a><u>password?</u></a></p>
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
